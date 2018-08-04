@@ -77,6 +77,6 @@ shannon_entropy(PyObject *self, PyObject *args)
 	}
 	free(counts);
 
-	ent /= logf(256);
+	ent /= logf(2);
 	return (Py_BuildValue("d", ent));
 }
